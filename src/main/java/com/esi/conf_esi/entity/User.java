@@ -2,9 +2,7 @@ package com.esi.conf_esi.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -19,7 +17,8 @@ public class User implements Serializable {
     private String prenom ;
     private String email ;
     private String pwd ;
-
+    @Enumerated(value = EnumType.STRING)
+    private Role rol ;
 
 
 

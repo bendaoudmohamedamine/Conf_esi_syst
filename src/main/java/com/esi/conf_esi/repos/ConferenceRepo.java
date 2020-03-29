@@ -14,9 +14,10 @@ public interface ConferenceRepo extends JpaRepository<Conference, UUID> {
     @Override
     public Conference getOne(UUID uuid);
     public List<Conference> findByDescContains(String mc) ;
-    public List<Conference> findByStartAfterAndEndBefore(Date st , Date en);
+    //public List<Conference> findByStartAfterAndEndBefore(Date st , Date en);
     public Conference findByTitre(String titre);
     public List<Conference> findByTitreContains(String mc) ;
+    //public List<Conference> findAllByOrOrderByStartAsc();
 
 
 }
