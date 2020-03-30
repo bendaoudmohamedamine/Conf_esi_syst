@@ -1,6 +1,7 @@
 package com.esi.conf_esi.service;
 
 import com.esi.conf_esi.entity.Location;
+import com.esi.conf_esi.repos.ConferenceRepo;
 import com.esi.conf_esi.repos.LocationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

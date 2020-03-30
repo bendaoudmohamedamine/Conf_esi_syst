@@ -6,16 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("/confs")
 public class ConfController {
+    @GetMapping("/")
+    public String index (){
+        return "index";
+    }
 
-    @GetMapping("/ajouter")
-    public String addConf (){
-        return "ajouter";
-    }
-    @GetMapping("/list")
-    public String listConf(){
-        return "list";
-    }
+
 
 }

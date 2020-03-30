@@ -6,14 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class WebController {
-    @GetMapping("/")
-    public String home(){
-        return "index.html";
-    }
-    @GetMapping("/confs")
-    public String conf(){
 
-        return "confs";
-    }
 }
 
